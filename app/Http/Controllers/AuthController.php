@@ -13,8 +13,12 @@ class AuthController extends Controller
     if (Auth::attempt($credentials)) {
         return redirect('vista/profile'); // Redirigir a la vista de perfil
     }
-
     return redirect()->back()->withErrors(['message' => 'Credenciales inválidas']);
     }  
+
+    public function logout(Request $request) {
+        Auth::logout();
+        return redirect('/vista/login');
+    }
 }
 

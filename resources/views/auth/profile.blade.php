@@ -18,8 +18,11 @@
     <!-- place navbar here -->
   </header>
   <main>
-    <p>HOLA MUNDO</p>
-    <a href="/vista/amigos">CLICK AMEO</a>
+    <p>Bienvenido {{$username}}</p>
+    <a href="/vista/details">Ver mas detalles de mi cuenta</a>
+    <br>
+    <br>
+    <a href="/logout">Cerrar sesion</a>
   </main>
   <footer>
     <!-- place footer here -->
