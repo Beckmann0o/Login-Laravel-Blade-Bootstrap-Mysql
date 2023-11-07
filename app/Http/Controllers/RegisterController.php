@@ -19,6 +19,6 @@ class RegisterController extends Controller
 
         //el metodo with permite pasr info entre diferentes solicitudes http, es decir que el mensaje tu cuenta se ha creado..
         //va estar diponible para la siguiente solicitud 
-        return redirect('login')->with('success', '¡Tu cuenta se ha creado con éxito!');
+        return redirect('vista/login')->with('success', '¡Tu cuenta se ha creado con éxito!');
     }
 }

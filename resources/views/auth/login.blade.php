@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>LOGIN LARAVEL</title>
+    <title>TASKER</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,7 +28,7 @@
                                     <div class="text-center">
                                         <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
                                             style="width: 185px;" alt="logo">
-                                        <h4 class="mt-1 mb-5 pb-1">LOGIN LARAVEL-BOOTSTRAP-MYSQL</h4>
+                                        <h4 class="mt-1 mb-5 pb-1">TASKER</h4>
                                     </div>
 
                                     <!-- ACA VA A MOSTRAR EL MENSAJE DE EXITO SI SE CREO BIEN LA CUENTA -->
@@ -38,7 +38,8 @@
                                     </div>
                                     @endif
 
-                                    <form action="/login" method="GET">
+                                    <form action="/login" method="POST">
+                                        @csrf
                                         <p>INGRESA A TU CUENTA</p>
 
                                         <div class="form-outline mb-4">
@@ -55,7 +56,6 @@
                                         <div class="text-center pt-1 mb-5 pb-1">
                                             <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
                                                 type="submit">Log in</button>
-                                            <a class="text-muted" href="#!">Olvidaste tu contraseña?</a>
                                         </div>
 
                                         <div class="d-flex align-items-center justify-content-center pb-4">
